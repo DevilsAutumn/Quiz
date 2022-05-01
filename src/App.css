@@ -1,0 +1,123 @@
+.App {
+  height: 100vh;
+  background-color: black;
+}
+
+.quiz {
+  height: 100vh;
+  width: 35vw;
+  background-color: rgb(31, 31, 31);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.quiz-form {
+  text-align: center;
+}
+
+#date {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  width: 15vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+}
+
+#question {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 30vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.options {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 13.5vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+#ans-dropdown {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 32vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+#hint {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 30vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  overflow: scroll;
+  min-height: 70px;
+  overflow: auto;
+}
+
+#file {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 13.5vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+  margin: 30px 0px 30px 0px;
+  cursor: pointer;
+}
+
+#del-btn {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 30vw;
+  background-color: red;
+  color: white;
+  font-size: 1.1rem;
+
+  cursor: pointer;
+}
+
+.add-remove-ques-btn {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 13.5vw;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 1.1rem;
+  margin: 25px;
+  cursor: pointer;
+}
+
+#submit-btn {
+  padding: 20px 18px 20px 18px;
+  border-radius: 10px;
+  border: none;
+  width: 30vw;
+  background-color: rgb(4, 180, 4);
+  color: white;
+  font-size: 1.1rem;
+
+  cursor: pointer;
+}
