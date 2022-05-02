@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require("path");
 global.bodyParser = require("body-parser");
 const QuizSchema = require("./Schema/Quiz-schema");
 require("dotenv").config();
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, "../build")));
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json({}));
 app.use(cors());
@@ -34,6 +36,10 @@ app.post("/submit", async (req, res) => {
       }
     }
   );
+});
+
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
 app.listen(PORT, () => {

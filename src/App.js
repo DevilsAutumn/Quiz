@@ -50,7 +50,7 @@ function App() {
     console.log(quiz);
 
     //sending data frontend to backend
-    await fetch("http://localhost:3000/submit", {
+    await fetch("/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ quiz, date }),
