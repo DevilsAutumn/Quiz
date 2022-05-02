@@ -43,6 +43,7 @@ app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
+app.use("/.netlify/functions/api.js");
 app.listen(PORT, () => {
   console.log(`server listening on Port: ${PORT}`);
 });
