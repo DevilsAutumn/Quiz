@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const serverless = require("serverless-http");
 global.bodyParser = require("body-parser");
 const QuizSchema = require("./Schema/Quiz-schema");
 require("dotenv").config();
@@ -45,3 +46,5 @@ app.get("/*", function (req, res) {
 app.listen(PORT, () => {
   console.log(`server listening on Port: ${PORT}`);
 });
+
+module.exports.handler = serverless(app);
