@@ -66,6 +66,7 @@ function App() {
           <input
             type="date"
             id="date"
+            className={qno > 1 && "hide-c"}
             onChange={(e) => setDate(e.target.value)}
           />
           <h1>{`Question ${qno}`}</h1>
